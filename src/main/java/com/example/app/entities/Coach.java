@@ -14,6 +14,12 @@ public class Coach {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String imie;
+    private String nazwisko;
+
+    @OneToOne(mappedBy = "trener")
+    private Club trenowanyKlub;
+
 
 
 }
