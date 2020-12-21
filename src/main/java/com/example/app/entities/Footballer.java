@@ -1,6 +1,8 @@
 package com.example.app.entities;
 
 import lombok.*;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
@@ -16,10 +18,13 @@ public class Footballer {
     private Long id;
 
     private String imie;
+
+    @Column(unique = true)
     private String nazwisko;
 
     @ManyToOne
     private Nationality narodowosc;
+
 
     private int numer;
 
