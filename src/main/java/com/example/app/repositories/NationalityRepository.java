@@ -6,5 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface NationalityRepository extends CrudRepository<Nationality, Long>, JpaRepository<Nationality,Long> {
     boolean existsByNarodowosc(String narodowosc);
-    Nationality findByNarodowosc(String narodowos);
+    Nationality findByNarodowosc(String narodowosc);
+
 }

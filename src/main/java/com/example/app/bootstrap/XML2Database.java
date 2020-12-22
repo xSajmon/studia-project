@@ -7,16 +7,19 @@ import com.example.app.repositories.FootballerRepository;
 import com.example.app.repositories.NationalityRepository;
 import com.example.app.repositories.PositionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.time.ZonedDateTime;
 
-public class xmlParsing {
+@Component
+public class XML2Database {
 
     @Autowired
     FootballerRepository footballerRepository;
@@ -41,7 +44,15 @@ public class xmlParsing {
         return nValue.getNodeValue();
     }
 
-    public void xmlToDb(NodeList nList) throws Exception {
+    public void xmlToDb() throws Exception {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document dom = builder.parse(new File("test.xml"));
+        dom.getDocumentElement().normalize();
+        Element root = dom.getDocumentElement();
+        System.out.println(root.getNodeName());
+        NodeList nList = dom.getElementsByTagName("footballer");
+
         for (int temp = 0; temp < nList.getLength(); temp++) {
             Node node = nList.item(temp);
             if (node.getNodeType() == Node.ELEMENT_NODE) {

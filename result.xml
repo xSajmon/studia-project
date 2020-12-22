@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pilkarze>
+    <footballer>
+        <imie/>
+        <nazwisko>Lewandowski</nazwisko>
+        <narodowosc/>
+        <pozycja>napastnik</pozycja>
+        <numer>9</numer>
+    </footballer>
+    <footballer>
+        <imie>Krzysztof</imie>
+        <nazwisko>Piatek</nazwisko>
+        <narodowosc>Polska</narodowosc>
+        <pozycja>napastnik</pozycja>
+        <numer>10</numer>
+    </footballer>
+    <footballer>
+        <imie>Wojtek</imie>
+        <nazwisko>Szczesny</nazwisko>
+        <narodowosc>Rosja</narodowosc>
+        <pozycja>bramkarz</pozycja>
+        <numer>111</numer>
+    </footballer>
+    <footballer>
+        <imie>Lionel</imie>
+        <nazwisko>Messi</nazwisko>
+        <narodowosc/>
+        <pozycja>napastnik</pozycja>
+        <numer>10</numer>
+    </footballer>
+    <footballer>
+        <imie>Piotrek</imie>
+        <nazwisko>Zielinski</nazwisko>
+        <narodowosc>Polska</narodowosc>
+        <pozycja>pomocnik</pozycja>
+        <numer>10</numer>
+    </footballer>
+</pilkarze>
