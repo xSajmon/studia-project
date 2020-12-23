@@ -2,11 +2,12 @@ package com.example.app.entities;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +19,7 @@ public class Club {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @JsonValue
     private String nazwa;
     @Column(name = "data_zal",length = 4)
     private Long dataZalozenia;
@@ -25,6 +27,7 @@ public class Club {
     @OneToOne
     private Coach trener;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "klubPilkarza")
     private Set<Footballer> pilkarze = new HashSet<>();
 

@@ -1,5 +1,6 @@
 package com.example.app.entities;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ public class Nationality {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @JsonValue
     private String narodowosc;
 
     @OneToMany(mappedBy = "narodowosc")

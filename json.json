@@ -1,0 +1,48 @@
+{
+  "footballers" : [ {
+    "id" : 11,
+    "imie" : null,
+    "nazwisko" : "Lewandowski",
+    "narodowosc" : null,
+    "numer" : 9,
+    "pozycja" : "napastnik",
+    "klubPilkarza" : null,
+    "dataDodania" : "2020-12-22 02:35:57"
+  }, {
+    "id" : 12,
+    "imie" : "Krzysztof",
+    "nazwisko" : "Piatek",
+    "narodowosc" : "Polska",
+    "numer" : 10,
+    "pozycja" : "napastnik",
+    "klubPilkarza" : null,
+    "dataDodania" : "2020-12-22 02:35:58"
+  }, {
+    "id" : 13,
+    "imie" : "Wojtek",
+    "nazwisko" : "Szczesny",
+    "narodowosc" : "Rosja",
+    "numer" : 111,
+    "pozycja" : "bramkarz",
+    "klubPilkarza" : null,
+    "dataDodania" : "2020-12-22 02:35:58"
+  }, {
+    "id" : 14,
+    "imie" : "Lionel",
+    "nazwisko" : "Messi",
+    "narodowosc" : null,
+    "numer" : 10,
+    "pozycja" : "napastnik",
+    "klubPilkarza" : null,
+    "dataDodania" : "2020-12-22 02:35:59"
+  }, {
+    "id" : 15,
+    "imie" : "Piotrek",
+    "nazwisko" : "Zielinski",
+    "narodowosc" : "Polska",
+    "numer" : 10,
+    "pozycja" : "pomocnik",
+    "klubPilkarza" : null,
+    "dataDodania" : "2020-12-22 02:35:59"
+  } ]
+}

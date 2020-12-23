@@ -1,8 +1,9 @@
 package com.example.app.entities;
 
-import lombok.*;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
@@ -11,6 +12,9 @@ import java.time.ZonedDateTime;
 @Entity
 @Table(name = "pilkarz")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+
 public class Footballer {
 
     @Id
@@ -34,6 +38,7 @@ public class Footballer {
     @ManyToOne
     private Club klubPilkarza;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     @Column(name="data_dodania")
     private ZonedDateTime dataDodania;
 
