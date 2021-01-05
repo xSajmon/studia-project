@@ -1,9 +1,7 @@
 package com.example.app.entities;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -14,7 +12,8 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Position {
+
+public class Position  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,9 +22,11 @@ public class Position {
     @JsonValue
     private String pozycja;
 
-    @OneToMany(mappedBy = "pozycja")
+    @OneToMany(mappedBy = "pozycja", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<Footballer> pilkarze = new HashSet<>();
 
 
-
 }
+

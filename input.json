@@ -1,0 +1,168 @@
+[{
+  "imie" : "Marc-Andre",
+  "nazwisko" : "Ter Stegen",
+  "numer" : 1,
+  "pozycja" : {
+    "id" : 1,
+    "pozycja": "bramkarz"
+  },
+  "narodowosc" : {
+    "id": 1,
+    "narodowosc": "Niemcy"
+  }
+
+},
+{
+  "imie" : "Clement",
+  "nazwisko" : "Lenglet",
+  "numer" : 15,
+  "pozycja": {
+    "id": 2,
+    "pozycja" : "obronca"
+  },
+  "narodowosc" : {
+    "id":3,
+    "narodowosc" : "Francja"
+
+}
+},
+  {
+    "imie" : "Gerard",
+    "nazwisko" : "Pique",
+    "numer" : 10,
+    "pozycja" : {
+      "id" : 2,
+      "pozycja": "obronca"
+    },
+    "narodowosc" : {
+      "id": 2,
+      "narodowosc": "Hiszpania"
+    }
+
+  },
+  {
+    "imie" : "Ronald",
+    "nazwisko" : "Araujo",
+    "numer" : 10,
+    "pozycja" : {
+      "id" : 4,
+      "pozycja": "obronca"
+    },
+    "narodowosc" : {
+      "id": 9,
+      "narodowosc": "Urugwaj"
+    }
+
+  },
+  {
+    "imie" : "Jordi",
+    "nazwisko" : "Alba",
+    "numer" : 18,
+    "pozycja" : {
+      "id" : 2,
+      "pozycja": "obronca"
+    },
+    "narodowosc" : {
+      "id": 2,
+      "narodowosc": "Hiszpania"
+    }
+
+  },
+  {
+    "imie" : "Sergino",
+    "nazwisko" : "Dest",
+    "numer" : 2,
+    "pozycja" : {
+      "id" : 2,
+      "pozycja": "obronca"
+    },
+    "narodowosc" : {
+      "id": 6,
+      "narodowosc": "Stany Zjednoczone"
+    }
+
+  },
+  {
+    "imie" : null,
+    "nazwisko" : "Trincao",
+    "numer" : 17,
+    "pozycja" : {
+      "id" : 2,
+      "pozycja": "napastnik"
+    },
+    "narodowosc" : {
+      "id": 7,
+      "narodowosc": "Portugalia"
+    }
+
+  },
+  {
+    "imie" : "Sergio",
+    "nazwisko" : "Busquets",
+    "numer" : 5,
+    "pozycja" : {
+      "id" : 3,
+      "pozycja": "pomocnik"
+    },
+    "narodowosc" : {
+      "id": 2,
+      "narodowosc": "Hiszpania"
+    }
+
+  },
+  {
+    "imie" : "Lionel",
+    "nazwisko" : "Messi",
+    "numer" : 10,
+    "pozycja" : {
+      "id" : 4,
+      "pozycja": "napastnik"
+    },
+    "narodowosc" : {
+      "id": 4,
+      "narodowosc": "Argentyna"
+    }
+
+  },
+  {
+    "imie" : "Antoine",
+    "nazwisko" : "Griezmann",
+    "numer" : 7,
+    "pozycja" : {
+      "id" : 4,
+      "pozycja": "napastnik"
+    },
+    "narodowosc" : {
+      "id": 3,
+      "narodowosc": "Francja"
+    }
+
+  },
+  {
+    "imie" : "Ousmane",
+    "nazwisko" : "Dembele",
+    "numer" : 11,
+    "pozycja" : {
+      "id" : 4,
+      "pozycja": "napastnik"
+    },
+    "narodowosc" : {
+      "id": 3,
+      "narodowosc": "Francja"
+    }
+
+  },
+  {
+    "imie" : "Ansu",
+    "nazwisko" : "Fati",
+    "numer" : 22,
+    "pozycja" : {
+      "id" : 4,
+      "pozycja": "napastnik"
+    },
+    "narodowosc" : {
+      "id": 2,
+      "narodowosc": "Hiszpania"
+    }
+
+  }]

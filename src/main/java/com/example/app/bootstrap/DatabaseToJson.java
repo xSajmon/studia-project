@@ -1,7 +1,7 @@
 package com.example.app.bootstrap;
 
 import com.example.app.entities.Footballer;
-import com.example.app.service.FootballerService;
+import com.example.app.repositories.FootballerRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -15,17 +15,16 @@ import java.util.List;
 @Component
 public class DatabaseToJson{
 
-    ObjectMapper objectMapper = new ObjectMapper();
-
 
     @Autowired
-    private FootballerService footballerService;
-    File file = new File("json.json");
-    public void saveToJson()throws  IOException{
-        objectMapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
-        objectMapper.registerModule(new JavaTimeModule());
-        List<Footballer> footballers = footballerService.getFootballers();
-        objectMapper.writerWithDefaultPrettyPrinter().withRootName("footballers").writeValue(file, footballers);
+    private FootballerRepository footballerRepository;
+    ObjectMapper mapper = new ObjectMapper();
+
+    public void saveToJson(File file)throws  IOException{
+        mapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
+        mapper.registerModule(new JavaTimeModule());
+        List<Footballer> footballers = footballerRepository.findAll();
+        mapper.writerWithDefaultPrettyPrinter().withRootName("footballers").writeValue(file, footballers);
         }
 
 }

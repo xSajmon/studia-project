@@ -1,20 +1,20 @@
 package com.example.app.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.ZonedDateTime;
 
 
 @Entity
 @Table(name = "pilkarz")
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-
+@XmlRootElement(name = "footballer")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Footballer {
 
     @Id
@@ -29,9 +29,7 @@ public class Footballer {
     @ManyToOne
     private Nationality narodowosc;
 
-
     private int numer;
-
     @ManyToOne
     private Position pozycja;
 

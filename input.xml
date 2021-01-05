@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pilkarze>
+    <footballer>
+        <imie></imie>
+        <nazwisko>Neto</nazwisko>
+        <narodowosc>
+            <id>5</id>
+            <narodowosc>Brazylia</narodowosc>
+        </narodowosc>
+        <pozycja>
+            <id>1</id>
+            <pozycja>bramkarz</pozycja>
+        </pozycja>
+        <numer>13</numer>
+    </footballer>
+    <footballer>
+        <imie>Riqui</imie>
+        <nazwisko>Puig</nazwisko>
+        <narodowosc>
+            <id>2</id>
+            <narodowosc>Hiszpania</narodowosc>
+        </narodowosc>
+        <pozycja>
+            <id>3</id>
+            <pozycja>pomocnik</pozycja>
+        </pozycja>
+        <numer>12</numer>
+    </footballer>
+</pilkarze>
