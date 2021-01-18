@@ -83,7 +83,7 @@
 
   },
   {
-    "imie" : null,
+    "imie" : "",
     "nazwisko" : "Trincao",
     "numer" : 17,
     "pozycja" : {

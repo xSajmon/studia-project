@@ -1,9 +1,10 @@
 package com.example.app.bootstrap;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.app.repositories.FootballerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
 import java.io.File;
 
 
@@ -15,6 +16,8 @@ public class BootStrapData implements CommandLineRunner{
     @Autowired DatabaseToXml databaseToXml;
     @Autowired JsonToDatabase jsonToDatabase;
     @Autowired DatabaseToJson databaseToJson;
+    @Autowired
+    FootballerRepository footballerRepository;
     File jsonInput = new File("input.json");
     File jsonOutput = new File("output.json");
     File xmlInput = new File("input.xml");
@@ -24,6 +27,5 @@ public class BootStrapData implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Zaczynamy!");
-        databaseToXml.saveToXml(xmlOutput);
-        databaseToJson.saveToJson(jsonOutput);
+
 }}

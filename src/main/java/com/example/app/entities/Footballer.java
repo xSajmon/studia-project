@@ -29,7 +29,9 @@ public class Footballer {
     @ManyToOne
     private Nationality narodowosc;
 
+    @Column(unique = true)
     private int numer;
+
     @ManyToOne
     private Position pozycja;
 
